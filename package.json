@@ -1,0 +1,18 @@
+{
+  "name": "aurum-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "netlify/functions"
+  ],
+  "scripts": {
+    "build": "npm run build -w frontend",
+    "dev:frontend": "npm run dev -w frontend",
+    "install:all": "npm install && npm install -w frontend && npm install -w netlify/functions"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
